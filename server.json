@@ -1,0 +1,29 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.yesc97/biopharma-catalyst-mcp",
+  "description": "Forensic biopharma catalyst auditor — 10 tools, deterministic CLEAN/BEAR_SIGNAL verdict.",
+  "repository": {
+    "url": "https://github.com/yesc97/biopharma-catalyst-mcp",
+    "source": "github"
+  },
+  "version": "1.2.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "biopharma-catalyst-mcp",
+      "version": "1.2.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "description": "SEC EDGAR User-Agent header (your-app/1.0 your@email.com). Required by SEC fair-use policy.",
+          "isRequired": true,
+          "format": "string",
+          "isSecret": false,
+          "name": "SEC_USER_AGENT"
+        }
+      ]
+    }
+  ]
+}

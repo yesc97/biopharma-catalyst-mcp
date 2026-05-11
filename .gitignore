@@ -1,0 +1,15 @@
+node_modules/
+build/
+*.log
+.env
+.env.local
+.DS_Store
+.vscode/
+.idea/
+mcp-publisher.exe
+
+# Agent context files — local only, never publish
+GEMINI.md
+CLAUDE.md
+.gemini/
+.claude/

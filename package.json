@@ -1,0 +1,32 @@
+{
+  "name": "biopharma-catalyst-mcp",
+  "version": "1.2.0",
+  "description": "Forensic biopharma research MCP server — 9 tools across CT.gov, PubMed, SEC EDGAR, XBRL, openFDA, Yahoo Finance, plus a deterministic catalyst aggregator (audit_catalyst).",
+  "mcpName": "io.github.yesc97/biopharma-catalyst-mcp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yesc97/biopharma-catalyst-mcp.git"
+  },
+  "type": "module",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/index.js",
+    "dev": "ts-node src/index.ts"
+  },
+  "keywords": ["mcp", "biopharma", "options-trading", "catalyst", "clinical-trials", "sec-edgar", "fda", "insider-trading", "short-interest", "model-context-protocol"],
+  "author": "Attila Kovacs (yesc97) <igenccc@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.6.0",
+    "axios": "^1.7.9",
+    "fast-xml-parser": "^5.7.3",
+    "yahoo-finance2": "^3.14.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}
